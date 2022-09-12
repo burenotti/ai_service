@@ -17,7 +17,7 @@ set(CONAN_DISABLE_CHECK_COMPILER True)
 
 conan_basic_setup()
 
-set(HEADERS src/neural/Layer.hpp src/dto/recognize_request.hpp src/controllers/recognize.hpp)
+set(HEADERS src/neural/neural.hpp src/dto/recognize_request.hpp src/controllers/recognize.hpp)
 set(SOURCES src/main.cpp src/business/recognize_digit.hpp)
 
 add_executable(ai_service ${HEADERS} ${SOURCES})
