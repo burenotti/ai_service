@@ -1,6 +1,13 @@
 #include <iostream>
+#include <filesystem>
+#include <drogon/drogon.h>
+#include "controllers/recognize.hpp"
+
+namespace fs = std::filesystem;
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    drogon::app()
+            .loadConfigFile("config.json")
+            .run();
 }
